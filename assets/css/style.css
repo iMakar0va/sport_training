@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f6fff7;
+  color: #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #3ca85b;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 0 0 20px 20px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.dashboard {
+  margin-top: 40px;
+}
+
+/* Карточки приветствия и статистики */
+.welcome-card,
+.stat-card,
+.goal-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.goal-card {
+  text-align: left;
+}
+
+.welcome-card h2,
+.stat-card h3,
+.goal-card h3 {
+  color: #3ca85b;
+}
+
+.welcome-card h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.welcome-card p,
+.goal-card p {
+  margin: 10px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Статистика */
+.stats {
+  margin-bottom: 40px;
+}
+.stat-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.stat-card {
+  width: 280px;
+}
+.stat-card p {
+  font-size: 16px;
+}
+
+/* Действия */
+.dashboard-actions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+  gap: 5px;
+}
+
+.btn,
+.btn-action,
+.goal-card .goal-btn {
+  color: white;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-action {
+  width: 100%;
+}
+
+.btn,
+.btn-action {
+  background-color: #44b867;
+}
+.btn:hover,
+.btn-action:hover {
+  background-color: #389e55;
+}
+
+.goal-card .goal-btn {
+  background-color: #007bff;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.goal-card .goal-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Карточки целей */
+.cards {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+}
+
+.goal-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.goal-card h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+  margin-right: 35px;
+}
+.goal-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+.goal-card .goal-info {
+  margin-bottom: 10px;
+  position: relative;
+}
+.goal-card .goal-info p {
+  margin: 5px 0;
+}
+.goal-info a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+}
+.goal-info img {
+  width: 32px;
+}
+.goal-card .goal-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Прогресс бар */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.progress-bar {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+.progress-red {
+  background-color: #e74c3c;
+}
+.progress-orange {
+  background-color: #f39c12;
+}
+.progress-yellow {
+  background-color: #f1c40f;
+}
+.progress-green {
+  background-color: #2ecc71;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .stat-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
